@@ -1,20 +1,14 @@
-import Carousel from './components/Carousel';
 import Header from './components/Header';
-import Modal from './components/Modal';
 import Scrolly from './components/Scrolly';
 import Cursor from './components/Cursor';
-
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
-      Carousel,
       Header,
-      Modal,
       Scrolly,
       Cursor,
-      
     };
     this.init();
   }

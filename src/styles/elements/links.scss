@@ -4,9 +4,10 @@
    ========================================================================== */
 
 a {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
-    cursor: none;
+    cursor: pointer;
+    font-size: var(--font-size-content);
 
     &:hover {
         color: var(--color-primary-dark);
