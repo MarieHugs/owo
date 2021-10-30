@@ -2,20 +2,21 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>OWO</title>
         <link rel="stylesheet" href="styles/main.css" />
         <script src="scripts/main.js" defer></script>
     </head>
     <body>
-        <header>
+        <header class="header" data-component="Header">
             <div class="wrapper">
-                <a href="index.html">
+                <a href="index.html" class="header__brand">
                     <img
                         class="logo"
                         src="assets/images/logo-blanc.png"
                         alt="logo de OWO"
                 /></a>
-                <nav>
+                <nav class="nav-primary">
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="#groupe">Nos Groupes</a></li>
@@ -30,8 +31,14 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </header>
+
         <div class="hero">
             <div class="wrapper">
                 <h1>OWO</h1>
@@ -169,7 +176,8 @@
                 <div class="mediassociaux">
                     <a href="https://www.youtube.com/user/ibighit"
                         ><svg class="icon icon--lg">
-                            <use xlink:href="#icon-youtube"></use></svg></a>
+                            <use xlink:href="#icon-youtube"></use></svg
+                    ></a>
                     <a
                         href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
                     >
@@ -180,15 +188,17 @@
                     <a
                         href="https://www.instagram.com/bts.bighitofficial/?hl=fr-ca"
                         ><svg class="icon icon--lg icon--stroke">
-                            <use xlink:href="#icon-instagram"></use></svg></a>
+                            <use xlink:href="#icon-instagram"></use></svg
+                    ></a>
                     <a href="https://twitter.com/BTS_twt"
                         ><svg class="icon icon--lg">
-                            <use xlink:href="#icon-twitter"></use></svg></a>
+                            <use xlink:href="#icon-twitter"></use></svg
+                    ></a>
                 </div>
 
                 <div class="footnote">
                     <p>© 2019 — 2020</p>
-                    <p>Vie privé — Nétiquette</p>
+                    <p>Marie-Eve Lamontagne - Développeuse web</p>
                 </div>
             </div>
         </footer>
