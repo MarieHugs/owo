@@ -11,7 +11,11 @@
     </head>
     <body>
         <div class="site-container" data-component="Scrolly">
-            <header class="header" data-component="Header">
+            <header
+                data-scrolly="fromTop"
+                class="header"
+                data-component="Header"
+            >
                 <div class="wrapper">
                     <a href="index.html" class="header__brand">
                         <img
@@ -43,7 +47,7 @@
             </header>
 
             <div class="hero">
-                <div class="wrapper">
+                <div class="wrapper" data-scrolly="fromOpacity">
                     <h1>OWO</h1>
                     <h2>Musique. Danse. Performance</h2>
                     <a
@@ -55,14 +59,14 @@
             </div>
             <section class="groupe" id="groupe">
                 <div class="wrapper">
-                    <h3>Nos Groupes</h3>
-                    <h5>
+                    <h3 data-scrolly="fromBottom">Nos Groupes</h3>
+                    <h5 data-scrolly="fromBottom">
                         Nous vous présentons nos trois groupes masculins de
                         Kpop,
                         <br />
                         les uns encore plus talentueux que les autres.
                     </h5>
-                    <div class="rang">
+                    <div class="rang" data-scrolly="fromLeft">
                         <img src="assets/images/aTEEZ.png" alt="" />
                         <div class="content">
                             <h4>YEETAZ</h4>
@@ -76,7 +80,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="rang rangodd">
+                    <div class="rang rangodd" data-scrolly="fromRight">
                         <div class="content">
                             <h4>E-BIGHIT BOYS</h4>
                             <p>
@@ -90,7 +94,7 @@
                         </div>
                         <img src="assets/images/bts.png" alt="" />
                     </div>
-                    <div class="rang">
+                    <div class="rang" data-scrolly="fromLeft">
                         <img src="assets/images/EXO.png" alt="" />
                         <div class="content">
                             <h4>EX-HO'S</h4>
@@ -109,12 +113,12 @@
             </section>
             <section class="album" id="album">
                 <div class="wrapper">
-                    <h3>Nos Albums</h3>
-                    <h5>
+                    <h3 data-scrolly="fromOpacity">Nos Albums</h3>
+                    <h5 data-scrolly="fromOpacity">
                         Explorer les merveilleux albums de nos artistes adorés!
                     </h5>
                     <section class="bloc">
-                        <article>
+                        <article data-scrolly="fromBottomQuick">
                             <img src="assets/images/mots.png" alt="" />
                             <div class="contenu">
                                 <h4>Map of the Soul</h4>
@@ -125,7 +129,7 @@
                                 >
                             </div>
                         </article>
-                        <article>
+                        <article data-scrolly="fromBottomLessQuick">
                             <img src="assets/images/vitesse.png" alt="" />
                             <div class="contenu">
                                 <h4>Vitesse</h4>
@@ -136,7 +140,7 @@
                                 >
                             </div>
                         </article>
-                        <article>
+                        <article data-scrolly="fromBottomSlow">
                             <img src="assets/images/treasure.png" alt="" />
                             <div class="contenu">
                                 <h4>Treasure</h4>
@@ -147,7 +151,7 @@
                                 >
                             </div>
                         </article>
-                        <article>
+                        <article data-scrolly="fromBottom">
                             <img src="assets/images/exorcisme.png" alt="" />
                             <div class="contenu">
                                 <h4>Exorcisme</h4>
@@ -163,7 +167,7 @@
             </section>
             <footer>
                 <div class="wrapper">
-                    <div class="menu">
+                    <div class="menu" data-scrolly="fromOpacity">
                         <nav class="navgauche">
                             <ul>
                                 <li><a href="index.html">Accueil</a></li>
@@ -180,14 +184,18 @@
                             </ul>
                         </nav>
                     </div>
-                    <hr />
+                    <hr data-scrolly="fromOpacity" />
                     <div class="mediassociaux">
-                        <a href="https://www.youtube.com/user/ibighit">
+                        <a
+                            data-scrolly="fromBottom"
+                            href="https://www.youtube.com/user/ibighit"
+                        >
                             <svg class="icon icon--lg">
                                 <use xlink:href="#icon-youtube"></use>
                             </svg>
                         </a>
                         <a
+                            data-scrolly="fromBottomSlow"
                             href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
                         >
                             <svg class="icon icon--lg icon--stroke">
@@ -195,19 +203,22 @@
                             </svg>
                         </a>
                         <a
+                            data-scrolly="fromBottomLessQuick"
                             href="https://www.instagram.com/bts.bighitofficial/?hl=fr-ca"
                             ><svg class="icon icon--lg icon--stroke">
                                 <use xlink:href="#icon-instagram"></use>
                             </svg>
                         </a>
-                        <a href="https://twitter.com/BTS_twt"
+                        <a
+                            data-scrolly="fromBottomQuick"
+                            href="https://twitter.com/BTS_twt"
                             ><svg class="icon icon--lg">
                                 <use xlink:href="#icon-twitter"></use>
                             </svg>
                         </a>
                     </div>
 
-                    <div class="footnote">
+                    <div class="footnote" data-scrolly="fromBottom">
                         <p>© 2019 — 2020</p>
                         <p>Marie-Eve Lamontagne - Développeuse web</p>
                     </div>
