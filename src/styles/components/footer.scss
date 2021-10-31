@@ -4,7 +4,7 @@ footer {
     hr {
         height: 2px;
         background-color: var(--color-bg-primary);
-        width: 1000px;
+        width: 100%;
         border: 0;
     }
 
@@ -22,25 +22,50 @@ footer {
         margin: 0;
     }
 
+    img {
+        max-width: none;
+    }
     ul {
         list-style-type: none;
+        padding: 0;
     }
 
     .footnote {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        @media screen and (min-width: $breakpoint-md) {
+            flex-direction: row;
+        }
         p {
-            margin-left: 20px;
-            margin-bottom: 35px;
-            margin-right: 0;
             color: var(--color-bg-primary);
+            text-align: center;
+            @media screen and (min-width: $breakpoint-md) {
+                margin-left: 20px;
+                margin-bottom: 35px;
+                margin-right: 0;
+            }
         }
     }
 }
 
 .menu {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 80px 150px 15px 150px;
+    padding: 80px 150px 15px 150px;
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            margin-left: 30px;
+        }
+    }
 }

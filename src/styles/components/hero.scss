@@ -1,9 +1,12 @@
 .hero {
-    padding: 100px;
     background-size: 100%;
     background-image: url('../../assets/images/hero.png');
     background-repeat: no-repeat;
     background-position: center center;
+
+    background-size: cover;
+
+    padding: 50px 0;
     width: 100%;
 
     text-align: center;

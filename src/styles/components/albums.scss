@@ -10,15 +10,20 @@
 
     h3 {
         color: var(--color-primary-dark);
+        text-align: center;
+        @media screen and (min-width: $breakpoint-md) {
+            text-align: left;
+        }
     }
 
     .bloc {
-        display: flex;
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+        }
 
         article {
             margin: 10px;
             background-color: var(--color-primary);
-            border-radius: 30px;
         }
         .contenu {
             background-color: var(--color-primary);
@@ -30,21 +35,14 @@
 
             h4 {
                 color: var(--color-bg-secondary);
-                margin-bottom: 100px;
                 margin-left: 20px;
-                margin-top: 20px;
-            }
-        }
+                margin-top: 0;
+                
 
-        .boutonarticle {
-            padding: 10px 5px;
-            width: 70%;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            background-color: var(--color-bg-primary);
-            &:hover {
-                background-color: var(--color-primary-dark);
-                color: var(--color-white);
+                @media screen and (min-width: $breakpoint-md) {
+                    margin-bottom: 50px;
+                    margin-left: 0;
+                }
             }
         }
     }
